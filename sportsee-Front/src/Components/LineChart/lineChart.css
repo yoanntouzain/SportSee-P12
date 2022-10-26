@@ -1,0 +1,19 @@
+.yAxis {
+    display: none;
+}
+
+.recharts-responsive-container {
+    display: flex;
+}
+
+.line .recharts-wrapper tspan {
+    font-size: 10px;
+}
+
+.line .recharts-legend-wrapper {
+    display: none;
+}
+
+#root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.line>div>div>svg {
+    background: #FF0000;
+}

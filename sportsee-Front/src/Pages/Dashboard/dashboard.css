@@ -1,0 +1,234 @@
+.main-dashboard {
+    margin: 1.723% 6.25% 0% 7.57%;
+    width: 100%;
+}
+
+.section-dashboard {
+    display: flex;
+}
+
+.header-dashboard {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-dashboard h1,
+.subtitle-dashboard h2 {
+    margin: 0;
+}
+
+.title-dashboard {
+    margin-bottom: 41px;
+}
+
+.title-dashboard h1 {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.title-dashboard h1 span {
+    color: red;
+}
+
+.subtitle-dashboard h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 77px;
+}
+
+/* article */
+.article-dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 5.5;
+    width: 100%;
+    margin-right: 30px;
+    border: 2px solid red;
+}
+
+.article-dashboard-header {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 380px;
+}
+
+.article-dashboard-subtitle {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 400px;
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+    border: 2px solid blue;
+    width: 30%;
+}
+
+/* Aside */
+
+.aside-dashboard {
+    flex: 1.6539 1;
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.aside-dashboard-container {
+    /* border: 1px solid green; */
+    background: #FBFBFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 51px 30px 30px;
+    border-radius: 5px;
+}
+
+.content-container-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.content-container-subtitle {
+    color: #74798C;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.logo-container {
+    padding: 21px;
+    margin-right: 24px;
+    border-radius: 5px;
+}
+
+.fa-fire,
+.fa-drumstick-bite,
+.fa-apple-whole,
+.fa-burger {
+    width: 25px;
+    height: 25px;
+}
+
+.fa-fire path {
+    fill: #FF0000;
+}
+
+.fa-drumstick-bite path {
+    fill: #4AB8FF;
+}
+
+.fa-apple-whole path {
+    fill: #FDCC0C;
+}
+
+.fa-burger path {
+    fill: #FD5181;
+}
+
+.calories {
+    background: #FBEAEA;
+}
+
+.protein {
+    background: #E9F4FB;
+}
+
+.carbohydrates {
+    background: #FAF6E5;
+}
+
+.lipids {
+    background: #FBEAEF;
+}
+
+@media screen and (width: 1440px) {
+    .article-dashboard-header {
+        margin-bottom: 30px;
+        height: 300px;
+    }
+
+    .article-dashboard-subtitle {
+        height: 307px;
+    }
+
+    .plan {
+        align-self: flex-end;
+        height: 80%;
+    }
+}
+
+@media screen and (width: 1024px) {
+
+    .main-dashboard {
+        margin: 1.723% 1.75% 0% 1.57%
+    }
+
+    .title-dashboard {
+        margin-bottom: 11px;
+    }
+
+    .title-dashboard h1 {
+        font-size: 28px;
+        font-weight: 500;
+    }
+
+    .title-dashboard h1 span {
+        color: red;
+    }
+
+    .subtitle-dashboard h2 {
+        font-size: 8px;
+        font-weight: 400;
+        margin-bottom: 27px;
+    }
+
+    .article-dashboard-header {
+        margin-bottom: 154px;
+    }
+
+    .article-dashboard-subtitle {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 210px;
+    }
+
+    .article-dashboard {
+        margin-right: 0px;
+    }
+
+    .aside-dashboard-container {
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    .logo-container {
+        padding: 16px;
+        margin-right: 24px;
+        border-radius: 5px;
+    }
+
+    .fa-fire,
+    .fa-drumstick-bite,
+    .fa-apple-whole,
+    .fa-burger {
+        width: 20px;
+        height: 20px;
+    }
+
+    .content-container-title {
+        font-size: 16px;
+    }
+
+    .content-container-subtitle {
+        font-size: 10px;
+    }
+
+    .plan {
+        align-self: flex-end;
+        height: 100%;
+        width: 33%;
+    }
+}

@@ -1,0 +1,22 @@
+.navContainer {
+    background: black;
+    padding: 18px 87px 12.07px 28px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-svg {
+    height: 61px;
+}
+
+.link a {
+    color: white;
+    text-decoration: none;
+    outline: none;
+    font-size: 24px;
+    font-weight: 500;
+}

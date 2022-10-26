@@ -1,0 +1,57 @@
+.radial-bar-chart {
+    background-color: #FBFBFB;
+}
+
+.radial .recharts-surface .recharts-area .recharts-layer .recharts-radial-bar-sector {
+    fill: red;
+}
+
+
+.radial .recharts-responsive-container .radial-bar-chart .recharts-surface .recharts-area .recharts-label-list .recharts-label tspan {
+    font-size: 44px;
+    fill: black;
+}
+
+div.plan.radial>div>div>div>ul>li.recharts-legend-item.legend-item-1>svg>path {
+    display: none;
+}
+
+#root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.radial>div>div>div {
+    width: 62px;
+    transform: translate(-75%, 0%);
+    line-height: 14px;
+    color: #74798C;
+}
+
+div.plan.radial>div>div>div>ul>li.recharts-legend-item.legend-item-1>span {
+    color: currentColor;
+    font-size: 24px;
+    display: block;
+    text-align: center;
+}
+
+div.plan.radial>div>div>div>ul>li.recharts-legend-item.legend-item-1>svg>path {
+    display: none;
+}
+
+@media screen and (width: 1440px) {
+
+    #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.radial>div>div>div {
+        transform: translate(-45%, -35%);
+    }
+
+    div.plan.radial>div>div>div>ul>li.recharts-legend-item.legend-item-1>span {
+        font-size: 17px;
+    }
+}
+
+@media screen and (width: 1024px) {
+
+    #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.radial>div>div>div {
+        transform: translate(-45%, -35%);
+    }
+
+    div.plan.radial>div>div>div>ul>li.recharts-legend-item.legend-item-1>span {
+        font-size: 14px;
+    }
+}

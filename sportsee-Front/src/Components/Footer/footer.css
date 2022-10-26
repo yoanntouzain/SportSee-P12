@@ -1,0 +1,100 @@
+.Footer {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    width: 117px;
+    height: fit-content;
+}
+
+.fa-person-swimming,
+.fa-person-biking,
+.fa-dumbbell {
+    width: 32px;
+    height: 32px;
+}
+
+.fa-person-swimming path,
+.fa-person-biking path,
+.fa-dumbbell path {
+    fill: #FF0101;
+}
+
+.fa-person-swimming {
+    transform: rotateY(180deg);
+}
+
+.fa-dumbbell {
+    transform: rotate(135deg);
+}
+
+.icons {
+    margin: 256px 26.5px 144px 26.5px;
+}
+
+.icon {
+    background: white;
+    border-radius: 6px;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+}
+
+/* Si c'est pas un bouton
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 6px;
+    width: 64px;
+    height: 64px;
+} */
+.text {
+    display: flex;
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    transform-origin: top left;
+    transform: rotate(270deg);
+    width: 140px;
+    margin-top: 304px;
+    margin-left: 42px;
+    margin-bottom: 150px;
+}
+
+.Footer-text {
+    margin: 0;
+}
+
+@media screen and (width: 1440px) {
+    .icons {
+        margin: 228px 0px 154px 18.5px;
+    }
+
+    .text {
+        margin-top: 169px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (width: 1024px) {
+
+    .Footer {
+        width: 87px;
+    }
+
+    .icons {
+        margin: 56px 0px 154px 18.5px;
+    }
+
+    .icon {
+        width: 53px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .text {
+        margin-top: 136px;
+        margin-bottom: 48px;
+    }
+}
