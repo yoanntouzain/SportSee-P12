@@ -6,22 +6,40 @@
     fill: red;
 }
 
-
-.radial .recharts-responsive-container .radial-bar-chart .recharts-surface .recharts-area .recharts-label-list .recharts-label tspan {
-    font-size: 44px;
-    fill: black;
-}
-
 div.plan.radial>div>div>div>ul>li.recharts-legend-item.legend-item-1>svg>path {
     display: none;
 }
 
-#root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.radial>div>div>div {
+/* #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.radial>div>div>div {
     width: 62px;
     transform: translate(-75%, 0%);
     line-height: 14px;
     color: #74798C;
+} */
+
+.containerScore {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    margin-right: 56px;
+    transform: translate(0%, -44%);
 }
+
+.valueScore {
+    font-size: 68px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 33px;
+    line-height: 20px;
+}
+
+.nameScore {
+    font-weight: 400;
+    color: #74798C;
+    font-size: 36px;
+}
+
 
 div.plan.radial>div>div>div>ul>li.recharts-legend-item.legend-item-1>span {
     color: currentColor;
@@ -36,22 +54,33 @@ div.plan.radial>div>div>div>ul>li.recharts-legend-item.legend-item-1>svg>path {
 
 @media screen and (width: 1440px) {
 
-    #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.radial>div>div>div {
-        transform: translate(-45%, -35%);
+    .containerScore {
+        margin-right: 25px;
+        transform: translate(0%, -44%);
     }
 
-    div.plan.radial>div>div>div>ul>li.recharts-legend-item.legend-item-1>span {
-        font-size: 17px;
+    .valueScore {
+        font-size: 34px;
+        margin-bottom: 14px;
+    }
+
+    .nameScore {
+        font-size: 20px;
     }
 }
 
 @media screen and (width: 1024px) {
-
-    #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.radial>div>div>div {
-        transform: translate(-45%, -35%);
+    .containerScore {
+        margin-right: 32px;
+        transform: translate(0%, -44%);
     }
 
-    div.plan.radial>div>div>div>ul>li.recharts-legend-item.legend-item-1>span {
-        font-size: 14px;
+    .valueScore {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .nameScore {
+        font-size: 16px;
     }
 }
