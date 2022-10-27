@@ -7,23 +7,25 @@ import {
   faAppleWhole,
   faBurger,
 } from '@fortawesome/free-solid-svg-icons'
+// import {
+//   getUserInfo,
+//   getPerformance,
+//   getAverageSessions,
+//   getActivity,
+// } from '../../Service/ApiManager'
+
+//Données mocks
 import {
   getUserInfo,
   getPerformance,
   getAverageSessions,
   getActivity,
-} from '../../Service/ApiManager'
+} from '../../Service/MockManager'
 import BarChart from '../../Components/BarChart/BarChart'
 import Linechart from '../../Components/LineChart/LineChart'
 import Radarchart from '../../Components/RadarChart/RadarChart'
 import RadialBarCharts from '../../Components/RadialBarCharts/RadialBarCharts'
 import { useParams } from 'react-router-dom'
-
-//Pictures
-// import Poids from '../../assets/poids.png'
-// import Objectifs from '../../assets/Objectifs.png'
-// import KPI from '../../assets/KPI.png'
-// import Radar from '../../assets/Radar.png'
 
 /**
  * Display home page with user's graphics
@@ -31,24 +33,12 @@ import { useParams } from 'react-router-dom'
  */
 
 function Dashboard() {
-  const oui = {
+  const dataInitial = {
     value: 100,
     fill: 'none',
     opacity: 0,
   }
 
-  const test = [
-    {
-      maKey: 100,
-      fill: 'none',
-      opacity: 0,
-    },
-    {
-      name: 'de votre objectif',
-      maKey: 50,
-      fill: 'currentColor',
-    },
-  ]
   const { id } = useParams()
 
   const [user, setUser] = useState({
@@ -120,7 +110,10 @@ function Dashboard() {
             <div className="plan radial">
               {/* <RadialBarCharts /> */}
               {/* <RadialBarCharts data={test} oui="maKey" /> */}
-              <RadialBarCharts data={[oui, user.todayScore]} oui="value" />
+              <RadialBarCharts
+                data={[dataInitial, user.todayScore]}
+                value="value"
+              />
             </div>
           </div>
         </article>
