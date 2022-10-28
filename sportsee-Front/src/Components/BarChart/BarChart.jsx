@@ -37,9 +37,14 @@ function Barchart(props) {
           barSize={1}
         />
         <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey={props.days} />
-        <YAxis />
-        <Legend verticalAlign="top" />
+        <XAxis dataKey={props.days} tick={{ stroke: '#9B9EAC' }} />
+        <YAxis
+          orientation="right"
+          tickCount={3}
+          axisLine={false}
+          tick={{ stroke: '#9B9EAC' }}
+        />
+        <Legend verticalAlign="top" align="right" />
       </BarChart>
     </ResponsiveContainer>
   )
