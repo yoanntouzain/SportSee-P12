@@ -24,7 +24,7 @@ function Linechart(props) {
         <XAxis
           dataKey={props.days}
           style={{ fill: 'white', stroke: 'transparant' }}
-          interval="preserveStartEnd"
+          interval="0"
         />
         <YAxis hide={true} />
         <Legend />

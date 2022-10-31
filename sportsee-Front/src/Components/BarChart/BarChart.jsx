@@ -28,21 +28,28 @@ function Barchart(props) {
           dataKey={props.kilograms}
           fill="#282D30"
           radius={[50, 50, 0, 0]}
+          barSize={10}
         />
         <Bar
           name="Calories brûlées (kCal)"
           dataKey={props.calorie}
           fill="#FF0000"
           radius={[50, 50, 0, 0]}
-          barSize={1}
+          barSize={10}
         />
         <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey={props.days} tick={{ stroke: '#9B9EAC' }} />
+        <XAxis
+          dataKey={props.days}
+          tick={{ stroke: '#9B9EAC' }}
+          axisLine={false}
+          tickMargin={16}
+        />
         <YAxis
           orientation="right"
           tickCount={3}
           axisLine={false}
           tick={{ stroke: '#9B9EAC' }}
+          tickMargin={45}
         />
         <Legend verticalAlign="top" align="right" />
       </BarChart>

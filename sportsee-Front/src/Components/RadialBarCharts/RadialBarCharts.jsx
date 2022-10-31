@@ -24,6 +24,7 @@ function RadialBarCharts(props) {
       </div>
     )
   }
+
   return (
     <ResponsiveContainer width="100%" height="100%">
       <RadialBarChart
@@ -44,6 +45,7 @@ function RadialBarCharts(props) {
             position: 'center',
             fill: 'black',
           }}
+          cornerRadius={50}
           background={{ fill: 'white' }}
         ></RadialBar>
         <Legend
