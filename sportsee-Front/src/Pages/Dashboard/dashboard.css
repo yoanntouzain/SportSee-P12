@@ -49,7 +49,9 @@
 .article-dashboard-header {
     width: 100%;
     height: 500px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    background: #FBFBFB;
 }
 
 .article-dashboard-subtitle {
@@ -153,7 +155,7 @@
 
 @media screen and (width: 1440px) {
     .article-dashboard-header {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         height: 300px;
     }
 
@@ -165,6 +167,15 @@
         align-self: flex-end;
         height: 80%;
         border-radius: 5px;
+    }
+
+    .legendRadial {
+        position: absolute;
+        font-size: 20px;
+        color: black;
+        top: 71%;
+        z-index: 1;
+        left: 58%;
     }
 
     #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.line>div>div>svg,
@@ -204,7 +215,7 @@
     }
 
     .article-dashboard-header {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         height: 300px;
     }
 

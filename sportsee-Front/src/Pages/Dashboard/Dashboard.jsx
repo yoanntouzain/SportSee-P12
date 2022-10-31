@@ -108,8 +108,7 @@ function Dashboard() {
               <Radarchart array={performance} category="kind" values="value" />
             </div>
             <div className="plan radial">
-              {/* <RadialBarCharts /> */}
-              {/* <RadialBarCharts data={test} oui="maKey" /> */}
+              <span className="legendRadial">Score</span>
               <RadialBarCharts
                 data={[dataInitial, user.todayScore]}
                 value="value"
