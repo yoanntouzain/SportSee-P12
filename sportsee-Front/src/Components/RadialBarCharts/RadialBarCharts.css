@@ -1,5 +1,6 @@
 .radial-bar-chart {
-    background-color: #FBFBFB;
+    /* background-color: #FBFBFB; */
+    background-color: blue;
 }
 
 .radial .recharts-surface .recharts-area .recharts-layer .recharts-radial-bar-sector {
@@ -16,12 +17,12 @@ div.plan.radial>div>div>div>ul>li.recharts-legend-item.legend-item-1>svg>path {
     flex-direction: column;
     width: 50%;
     text-align: center;
-    margin-right: 56px;
-    transform: translate(0%, -44%);
+    margin-right: 62px;
+    transform: translate(-63%, -44%);
 }
 
 .valueScore {
-    font-size: 68px;
+    font-size: 53px;
     font-weight: 700;
     color: black;
     margin-bottom: 33px;
@@ -31,7 +32,7 @@ div.plan.radial>div>div>div>ul>li.recharts-legend-item.legend-item-1>svg>path {
 .nameScore {
     font-weight: 400;
     color: #74798C;
-    font-size: 36px;
+    font-size: 24px;
 }
 
 
@@ -46,20 +47,63 @@ div.plan.radial>div>div>div>ul>li.recharts-legend-item.legend-item-1>svg>path {
     display: none;
 }
 
+#root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.radial>div>div {
+    text-align: center;
+}
+
+#root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.radial>div>div>svg {
+    width: 431px;
+    height: 327px;
+    margin-top: 42px;
+}
+
+.legendRadial {
+    position: absolute;
+    font-size: 29px;
+    font-weight: 500;
+    color: black;
+    bottom: 28%;
+    z-index: 1;
+    left: 56%;
+}
+
+#root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div:nth-child(2)>div>div>svg>g.recharts-layer.recharts-polar-angle-axis>g>g:nth-child(4)>text {
+    transform: translate(0%, 4%);
+}
+
+
+#root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div:nth-child(2)>div>div>svg>g.recharts-layer.recharts-polar-angle-axis>g>g:nth-child(1)>text>tspan,
+#root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div:nth-child(2)>div>div>svg>g.recharts-layer.recharts-polar-angle-axis>g>g:nth-child(2)>text>tspan,
+#root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div:nth-child(2)>div>div>svg>g.recharts-layer.recharts-polar-angle-axis>g>g:nth-child(3)>text>tspan,
+#root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div:nth-child(2)>div>div>svg>g.recharts-layer.recharts-polar-angle-axis>g>g:nth-child(4)>text>tspan,
+#root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div:nth-child(2)>div>div>svg>g.recharts-layer.recharts-polar-angle-axis>g>g:nth-child(5)>text>tspan,
+#root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div:nth-child(2)>div>div>svg>g.recharts-layer.recharts-polar-angle-axis>g>g:nth-child(6)>text>tspan {
+    font-size: 23px;
+}
+
 @media screen and (width: 1440px) {
+
+    #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div:nth-child(2)>div>div>svg>g.recharts-layer.recharts-polar-angle-axis>g>g:nth-child(1)>text>tspan,
+    #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div:nth-child(2)>div>div>svg>g.recharts-layer.recharts-polar-angle-axis>g>g:nth-child(2)>text>tspan,
+    #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div:nth-child(2)>div>div>svg>g.recharts-layer.recharts-polar-angle-axis>g>g:nth-child(3)>text>tspan,
+    #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div:nth-child(2)>div>div>svg>g.recharts-layer.recharts-polar-angle-axis>g>g:nth-child(4)>text>tspan,
+    #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div:nth-child(2)>div>div>svg>g.recharts-layer.recharts-polar-angle-axis>g>g:nth-child(5)>text>tspan,
+    #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div:nth-child(2)>div>div>svg>g.recharts-layer.recharts-polar-angle-axis>g>g:nth-child(6)>text>tspan {
+        font-size: 19px;
+    }
 
     .containerScore {
         margin-right: 25px;
-        transform: translate(0%, -50%);
+        transform: translate(-42%, -40%);
     }
 
     .valueScore {
-        font-size: 34px;
+        font-size: 26px;
         margin-bottom: 14px;
     }
 
     .nameScore {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.radial>div>div {
@@ -67,7 +111,6 @@ div.plan.radial>div>div>div>ul>li.recharts-legend-item.legend-item-1>svg>path {
         cursor: default;
         width: 252px;
         height: 246px;
-        text-align: center;
     }
 
     #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.radial>div>div>svg {
@@ -75,20 +118,38 @@ div.plan.radial>div>div>div>ul>li.recharts-legend-item.legend-item-1>svg>path {
         height: 209px;
         margin-top: 29px;
     }
+
+    .legendRadial {
+        font-size: 20px;
+        bottom: 26%;
+        left: 57%;
+    }
 }
 
 @media screen and (width: 1024px) {
     .containerScore {
         margin-right: 32px;
-        transform: translate(0%, -44%);
+        transform: translate(-19%, -44%);
     }
 
     .valueScore {
-        font-size: 28px;
+        font-size: 26px;
         margin-bottom: 10px;
     }
 
     .nameScore {
-        font-size: 16px;
+        font-size: 14px;
+    }
+
+    #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.radial>div>div>svg {
+        width: 221px;
+        height: 176px;
+        margin-top: 26px;
+    }
+
+    .legendRadial {
+        font-size: 19px;
+        bottom: 28%;
+        left: 57%;
     }
 }
