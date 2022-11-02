@@ -33,7 +33,7 @@
 .subtitle-dashboard h2 {
     font-size: 18px;
     font-weight: 400;
-    margin-bottom: 77px;
+    margin-bottom: 57px;
 }
 
 /* article */
@@ -50,6 +50,7 @@
     width: 100%;
     height: 500px;
     margin-bottom: 10px;
+    padding-top: 20px;
     padding-bottom: 20px;
     background: #FBFBFB;
     border-radius: 15px;
@@ -60,6 +61,23 @@
     justify-content: space-between;
     width: 100%;
     height: 400px;
+}
+
+.legendBar {
+    position: absolute;
+    left: 14%;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.legendLine {
+    position: absolute;
+    bottom: 27%;
+    left: 14%;
+    width: 7%;
+    color: white;
+    font-size: 15px;
+    z-index: 1;
 }
 
 .plan {
@@ -165,6 +183,13 @@
         height: 307px;
     }
 
+    .legendBar {
+        position: absolute;
+        left: 18%;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
     .plan {
         align-self: flex-end;
         height: 80%;
@@ -212,6 +237,23 @@
         height: 300px;
     }
 
+    .legendBar {
+        position: absolute;
+        left: 12%;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .legendLine {
+        position: absolute;
+        bottom: 24%;
+        left: 12%;
+        width: 13%;
+        color: white;
+        font-size: 13px;
+        z-index: 1;
+    }
+
     .article-dashboard-subtitle {
         display: flex;
         justify-content: space-between;
@@ -220,7 +262,7 @@
     }
 
     .article-dashboard {
-        margin-right: 0px;
+        margin-right: 14px;
     }
 
     .aside-dashboard-container {

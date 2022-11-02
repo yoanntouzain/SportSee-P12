@@ -1,6 +1,6 @@
 .radial-bar-chart {
-    /* background-color: #FBFBFB; */
-    background-color: blue;
+    background-color: #FBFBFB;
+    /* background-color: blue; */
 }
 
 .radial .recharts-surface .recharts-area .recharts-layer .recharts-radial-bar-sector {
@@ -148,8 +148,8 @@ div.plan.radial>div>div>div>ul>li.recharts-legend-item.legend-item-1>svg>path {
     }
 
     .legendRadial {
-        font-size: 19px;
-        bottom: 28%;
+        font-size: 14px;
+        bottom: 26%;
         left: 57%;
     }
 }

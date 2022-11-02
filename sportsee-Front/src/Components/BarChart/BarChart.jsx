@@ -6,6 +6,7 @@ import {
   CartesianGrid,
   Legend,
   ResponsiveContainer,
+  Tooltip,
 } from 'recharts'
 import './barChart.css'
 
@@ -22,7 +23,20 @@ function Barchart(props) {
           left: 20,
           bottom: 5,
         }}
+        barCategoryGap="10%"
+        barGap="8"
       >
+        <Tooltip
+          width="10%"
+          offset={31}
+          stroke={0}
+          contentStyle={{
+            background: 'red',
+            border: 'none',
+          }}
+          labelStyle={{ display: 'none' }}
+          itemStyle={{ color: 'white' }}
+        />
         <Bar
           name="Poids (kg)"
           dataKey={props.kilograms}
@@ -51,7 +65,7 @@ function Barchart(props) {
           tick={{ stroke: '#9B9EAC' }}
           tickMargin={45}
         />
-        <Legend verticalAlign="top" align="right" />
+        <Legend verticalAlign="top" align="right" iconType="circle" />
       </BarChart>
     </ResponsiveContainer>
   )
