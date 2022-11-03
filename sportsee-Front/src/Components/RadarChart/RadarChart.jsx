@@ -8,6 +8,11 @@ import {
   ResponsiveContainer,
 } from 'recharts'
 
+/**
+ *
+ * @param {Object} props user data
+ * @returns HTML user's bar radar about different performance
+ */
 function Radarchart(props) {
   return (
     <ResponsiveContainer width="100%" height="100%">

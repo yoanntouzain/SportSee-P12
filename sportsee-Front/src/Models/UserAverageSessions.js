@@ -1,3 +1,7 @@
+/**
+ * @param {Object} data user data
+ * @return {Array} user data
+ */
 export default class UserAverageSessions {
   constructor(data) {
     let day = {
@@ -16,7 +20,5 @@ export default class UserAverageSessions {
       element.day = day[element.day]
       this.session.push(element)
     })
-    // console.log('average ', data)
-    // console.log('average ', this)
   }
 }

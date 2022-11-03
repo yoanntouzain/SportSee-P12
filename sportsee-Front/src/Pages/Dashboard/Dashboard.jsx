@@ -14,7 +14,7 @@ import {
 //   getActivity,
 // } from '../../Service/ApiManager'
 
-//Données mocks
+//Data mocks
 import {
   getUserInfo,
   getPerformance,

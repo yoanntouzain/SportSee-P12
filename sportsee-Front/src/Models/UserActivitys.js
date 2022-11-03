@@ -1,3 +1,7 @@
+/**
+ * @param {Object} data user data
+ * @return {Array} user data
+ */
 export default class UserActivitys {
   constructor(data) {
     this.sessions = []
@@ -5,8 +9,5 @@ export default class UserActivitys {
       element.day = new Date(element.day).getDate()
       this.sessions.push(element)
     })
-
-    // console.log('activity ', data)
-    // console.log('activity ', this.sessions)
   }
 }

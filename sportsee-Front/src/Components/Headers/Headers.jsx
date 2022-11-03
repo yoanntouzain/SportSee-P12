@@ -1,6 +1,10 @@
 import { Link } from 'react-router-dom'
 import './headers.css'
 
+/**
+ *
+ * @returns SVG element
+ */
 const SportSee = () => (
   <svg
     width="178"
@@ -72,7 +76,11 @@ const SportSee = () => (
   </svg>
 )
 
-export default function Headers() {
+/**
+ * Display header page with different navigation link
+ * @returns HTML content nav link
+ */
+function Headers() {
   return (
     <nav className="navContainer">
       <div className="links">
@@ -95,3 +103,5 @@ export default function Headers() {
     </nav>
   )
 }
+
+export default Headers
