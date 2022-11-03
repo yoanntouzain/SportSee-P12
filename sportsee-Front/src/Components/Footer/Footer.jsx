@@ -7,6 +7,10 @@ import {
   faDumbbell,
 } from '@fortawesome/free-solid-svg-icons'
 
+/**
+ *
+ * @returns SVG element
+ */
 const Zen = () => (
   <svg
     width="32"
@@ -26,7 +30,11 @@ const Zen = () => (
   </svg>
 )
 
-export default function Footer() {
+/**
+ * Display footer with different SVG disciplinary sports
+ * @returns HTML content footer with four SVG
+ */
+function Footer() {
   return (
     <div className="Footer">
       <div className="icons">
@@ -49,3 +57,4 @@ export default function Footer() {
     </div>
   )
 }
+export default Footer

@@ -1,3 +1,7 @@
+/**
+ * @param {Object} data user data
+ * @return {Object} user data
+ */
 export default class UserInfo {
   constructor(data) {
     for (const [key] of Object.entries(data)) {

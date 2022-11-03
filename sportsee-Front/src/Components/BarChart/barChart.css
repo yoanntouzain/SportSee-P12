@@ -7,3 +7,16 @@
 #root>div>div.main-dashboard>section>article>div.article-dashboard-header>div>div>div>ul>li.recharts-legend-item.legend-item-0>svg {
     border-radius: 100%;
 }
+
+@media screen and (width: 1024px) {
+
+    #root>div>div.main-dashboard>section>article>div.article-dashboard-header>div>div>div.recharts-legend-wrapper>ul>li.recharts-legend-item.legend-item-0,
+    #root>div>div.main-dashboard>section>article>div.article-dashboard-header>div>div>div.recharts-legend-wrapper>ul>li.recharts-legend-item.legend-item-1 {
+        font-size: 14px;
+    }
+
+    #root>div>div.main-dashboard>section>article>div.article-dashboard-header>div>div>div.recharts-legend-wrapper>ul>li.recharts-legend-item.legend-item-0 svg,
+    #root>div>div.main-dashboard>section>article>div.article-dashboard-header>div>div>div.recharts-legend-wrapper>ul>li.recharts-legend-item.legend-item-1 svg {
+        width: 10px;
+    }
+}

@@ -6,8 +6,15 @@ import {
   CartesianGrid,
   Legend,
   ResponsiveContainer,
+  Tooltip,
 } from 'recharts'
 import './barChart.css'
+
+/**
+ *
+ * @param {Object} props user data
+ * @returns HTML user's bar chart about activity daily
+ */
 
 function Barchart(props) {
   return (
@@ -22,7 +29,20 @@ function Barchart(props) {
           left: 20,
           bottom: 5,
         }}
+        barCategoryGap="10%"
+        barGap="8"
       >
+        <Tooltip
+          width="10%"
+          offset={31}
+          stroke={0}
+          contentStyle={{
+            background: 'red',
+            border: 'none',
+          }}
+          labelStyle={{ display: 'none' }}
+          itemStyle={{ color: 'white' }}
+        />
         <Bar
           name="Poids (kg)"
           dataKey={props.kilograms}
@@ -51,51 +71,9 @@ function Barchart(props) {
           tick={{ stroke: '#9B9EAC' }}
           tickMargin={45}
         />
-        <Legend verticalAlign="top" align="right" />
+        <Legend verticalAlign="top" align="right" iconType="circle" />
       </BarChart>
     </ResponsiveContainer>
   )
 }
 export default Barchart
-
-// function Barchart(props) {
-//   const getPath = (x, y, width, height) => {
-//     return `M${x + width / 4},${y + height}C${x + width / 2},${y - height} ${
-//       x + width / 3
-//     },${y + height / 16}
-//   ${x + width / 2.5}, ${y}
-//           C${x + width},${y - height / 18} ${x + width / 4},${y + width * 3} ${
-//       x + width / 1.4
-//     }, ${y + height}Z`
-//   }
-
-//   const TriangleBar = (props) => {
-//     const { fill, x, y, width, height } = props
-
-//     return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />
-//   }
-//   return (
-//     <ResponsiveContainer width="100%" height="100%">
-//       <BarChart data={props.data}>
-//         <Bar
-//           name="Poids (kg)"
-//           dataKey={props.kilograms}
-//           fill="#282D30"
-//           shape={<TriangleBar />}
-//         />
-//         <Bar
-//           name="Calories brûlées (kCal)"
-//           dataKey={props.calorie}
-//           fill="#FF0000"
-//           shape={<TriangleBar />}
-//         />
-
-//         <XAxis dataKey={props.days} />
-//         <YAxis />
-//         <CartesianGrid strokeDasharray="3 3" />
-//         <Legend verticalAlign="top" />
-//       </BarChart>
-//     </ResponsiveContainer>
-//   )
-// }
-// export default Barchart

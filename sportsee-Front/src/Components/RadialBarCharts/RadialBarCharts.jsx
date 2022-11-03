@@ -15,6 +15,11 @@ const style = {
   // color: '#74798C',
 }
 
+/**
+ *
+ * @param {Object} props user data
+ * @returns HTML user's radial chart about score objective
+ */
 function RadialBarCharts(props) {
   const legendRender = (props) => {
     return (

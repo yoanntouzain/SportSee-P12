@@ -9,6 +9,11 @@ import {
 } from 'recharts'
 import './lineChart.css'
 
+/**
+ *
+ * @param {Object} props user data
+ * @returns HTML user's line chart about average duration sesion
+ */
 function Linechart(props) {
   return (
     <ResponsiveContainer width="100%" height="100%">

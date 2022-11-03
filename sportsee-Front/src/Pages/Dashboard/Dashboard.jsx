@@ -14,7 +14,7 @@ import {
 //   getActivity,
 // } from '../../Service/ApiManager'
 
-//Données mocks
+//Data mocks
 import {
   getUserInfo,
   getPerformance,
@@ -88,6 +88,7 @@ function Dashboard() {
         <article className="article-dashboard">
           {/* Article header */}
           <div className="article-dashboard-header">
+            <span className="legendBar">Activité quotidienne</span>
             <BarChart
               data={activity}
               days="day"
@@ -98,6 +99,7 @@ function Dashboard() {
           {/* article sutitle */}
           <div className="article-dashboard-subtitle">
             <div className="plan line">
+              <span className="legendLine">Durée moyenne des sessions</span>
               <Linechart
                 array={averageSession}
                 days="day"

@@ -1,3 +1,7 @@
+/**
+ * @param {Object} data user data
+ * @return {Array} user data
+ */
 export default class UserPerformances {
   constructor(data) {
     this.perf = []
@@ -5,7 +9,5 @@ export default class UserPerformances {
       element.kind = data.kind[element.kind]
       this.perf.push(element)
     })
-    // console.log('perf ', data)
-    // console.log('perf ', this)
   }
 }
