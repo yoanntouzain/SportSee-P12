@@ -64,7 +64,6 @@ function Dashboard() {
       } else {
         navigate('/error')
       }
-      //setUser(resultUser)
 
       let resultPerf = await getPerformance(id)
       setPerformance(resultPerf.perf)
@@ -76,7 +75,7 @@ function Dashboard() {
       setactivity(resultActivity.sessions)
     }
     getUser()
-  }, [id])
+  }, [id, navigate])
 
   return (
     <div className="main-dashboard">

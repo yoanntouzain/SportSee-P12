@@ -70,6 +70,8 @@ function Barchart(props) {
           axisLine={false}
           tick={{ stroke: '#9B9EAC' }}
           tickMargin={45}
+          dataKey={props.calorie}
+          //dataKey={props.kilogram}
         />
         <Legend verticalAlign="top" align="right" iconType="circle" />
       </BarChart>
