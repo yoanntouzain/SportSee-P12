@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Headers from './Components/Headers/Headers'
 import Footer from './Components/Footer/Footer'
 import Dashboard from './Pages/Dashboard/Dashboard'
+import Error from './Pages/Error/Error'
 
 //CSS
 import './index.css'
@@ -28,6 +29,7 @@ root.render(
             </div>
           }
         />
+        <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
