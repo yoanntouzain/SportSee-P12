@@ -26,7 +26,7 @@ import BarChart from '../../Components/BarChart/BarChart'
 import Linechart from '../../Components/LineChart/LineChart'
 import Radarchart from '../../Components/RadarChart/RadarChart'
 import RadialBarCharts from '../../Components/RadialBarCharts/RadialBarCharts'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 
 /**
  * Display home page with user's graphics
@@ -41,6 +41,8 @@ function Dashboard() {
   }
 
   const { id } = useParams()
+
+  const navigate = useNavigate()
 
   const [user, setUser] = useState({
     userInfos: {},
@@ -57,7 +59,12 @@ function Dashboard() {
   useEffect(() => {
     async function getUser() {
       let resultUser = await getUserInfo(id)
-      setUser(resultUser)
+      if (resultUser !== null) {
+        setUser(resultUser)
+      } else {
+        navigate('/error')
+      }
+      //setUser(resultUser)
 
       let resultPerf = await getPerformance(id)
       setPerformance(resultPerf.perf)

@@ -8,10 +8,15 @@ import UserPerformances from '../Models/UserPerfomances'
  * @param {String} id user identifier
  * @returns {Object} user information
  */
+
 async function getUserInfo(id) {
   let result = await fetch(`http://localhost:3000/user/${id}`)
-  let userInfo = await result.json()
-  return new UserInfo(userInfo.data)
+  if (result.status === 200) {
+    let userInfo = await result.json()
+    return new UserInfo(userInfo.data)
+  } else {
+    return null
+  }
 }
 
 /**
