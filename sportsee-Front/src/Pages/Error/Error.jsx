@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import './error.css'
 
 export default function Error() {

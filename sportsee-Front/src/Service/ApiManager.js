@@ -6,7 +6,7 @@ import UserPerformances from '../Models/UserPerfomances'
 /**
  * Retrieve user general information
  * @param {String} id user identifier
- * @returns {Object} user information
+ * @returns {Object} user information or null
  */
 
 async function getUserInfo(id) {
