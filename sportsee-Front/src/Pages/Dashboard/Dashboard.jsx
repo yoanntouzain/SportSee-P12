@@ -7,20 +7,21 @@ import {
   faAppleWhole,
   faBurger,
 } from '@fortawesome/free-solid-svg-icons'
-// import {
-//   getUserInfo,
-//   getPerformance,
-//   getAverageSessions,
-//   getActivity,
-// } from '../../Service/ApiManager'
-
-//Data mocks
 import {
   getUserInfo,
   getPerformance,
   getAverageSessions,
   getActivity,
-} from '../../Service/MockManager'
+} from '../../Service/ApiManager'
+
+//Data mocks
+//import {
+//  getUserInfo,
+//  getPerformance,
+//  getAverageSessions,
+//  getActivity,
+//} from '../../Service/MockManager'
+
 import BarChart from '../../Components/BarChart/BarChart'
 import Linechart from '../../Components/LineChart/LineChart'
 import Radarchart from '../../Components/RadarChart/RadarChart'
