@@ -24,7 +24,7 @@
 
 }
 
-@media screen and (width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
 
     .radar-chart {
         border-radius: 15px;

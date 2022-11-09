@@ -2,8 +2,8 @@
     background: black;
     display: flex;
     flex-direction: column;
+    justify-items: center;
     width: 117px;
-    height: fit-content;
 }
 
 .fa-person-swimming,
@@ -28,7 +28,8 @@
 }
 
 .icons {
-    margin: 256px 26.5px 144px 26.5px;
+    /*margin: 256px 26.5px 144px 26.5px;*/
+    margin: auto 26.5px auto 26.5px;
 }
 
 .icon {
@@ -39,17 +40,20 @@
     margin-bottom: 20px;
 }
 
-/* Si c'est pas un bouton
-.icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    border-radius: 6px;
-    width: 64px;
-    height: 64px;
-} */
+
 .text {
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 63.28%;
+    white-space: nowrap;
+}
+
+.Footer-text {
+    transform: rotate(270deg);
+}
+
+/* .text {
     display: flex;
     font-size: 12px;
     font-weight: 500;
@@ -64,8 +68,9 @@
 
 .Footer-text {
     margin: 0;
-}
+} */
 
+/* 
 @media screen and (width: 1440px) {
     .icons {
         margin: 228px 0px 154px 18.5px;
@@ -97,4 +102,4 @@
         margin-top: 136px;
         margin-bottom: 47px;
     }
-}
+} */

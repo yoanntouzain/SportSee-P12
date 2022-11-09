@@ -8,7 +8,7 @@
     border-radius: 100%;
 }
 
-@media screen and (width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
 
     #root>div>div.main-dashboard>section>article>div.article-dashboard-header>div>div>div.recharts-legend-wrapper>ul>li.recharts-legend-item.legend-item-0,
     #root>div>div.main-dashboard>section>article>div.article-dashboard-header>div>div>div.recharts-legend-wrapper>ul>li.recharts-legend-item.legend-item-1 {

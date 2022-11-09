@@ -126,7 +126,7 @@ div.plan.radial>div>div>div>ul>li.recharts-legend-item.legend-item-1>svg>path {
     }
 }
 
-@media screen and (width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
     .containerScore {
         margin-right: 32px;
         transform: translate(-19%, -44%);
