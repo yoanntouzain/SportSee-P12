@@ -1,13 +1,12 @@
 .main-dashboard {
     margin: 1.723% 6.25% 0% 7.57%;
     width: 100%;
+    height: 90%;
 }
 
 .section-dashboard {
     display: flex;
-    /* margin-bottom: 2.955%; */
-    height: 100%;
-    /*100% instable*/
+    height: 90%;
 }
 
 .header-dashboard {
@@ -46,13 +45,13 @@
     flex: 5.5;
     width: 100%;
     margin-right: 30px;
-    /* border: 2px solid red; */
 }
 
 .article-dashboard-header {
+    position: relative;
     width: 100%;
-    height: 500px;
-    margin-bottom: 10px;
+    height: 400px;
+    margin-bottom: 1.043%;
     padding-top: 20px;
     padding-bottom: 20px;
     background: #FBFBFB;
@@ -68,15 +67,18 @@
 
 .legendBar {
     position: absolute;
-    left: 14%;
+    top: 7%;
+    left: 4%;
+    /* left: 14%; */
     font-size: 15px;
     font-weight: 500;
+    z-index: 1;
 }
 
 .legendLine {
     position: absolute;
-    bottom: 27%;
-    left: 14%;
+    top: 3%;
+    left: 10%;
     width: 7%;
     color: white;
     font-size: 15px;
@@ -85,8 +87,8 @@
 
 .plan {
     display: flex;
+    position: relative;
     align-items: center;
-    /* border: 2px solid blue; */
     width: 32%;
     border-radius: 15px;
 }
@@ -102,14 +104,12 @@
 
 .aside-dashboard {
     flex: 1.6539 1;
-    /* border: 2px solid blue; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
 .aside-dashboard-container {
-    /* border: 1px solid green; */
     background: #FBFBFB;
     display: flex;
     justify-content: center;
@@ -175,15 +175,15 @@
     background: #FBEAEF;
 }
 
-@media screen and (width: 1440px) {
+@media screen and (min-width: 1440px) and (max-width:2559px) {
     .article-dashboard-header {
-        margin-bottom: 10px;
-        height: 300px;
+        /* height: 300px; */
+        height: 42.348%;
         border-radius: 5px;
     }
 
     .article-dashboard-subtitle {
-        height: 307px;
+        height: 33%;
     }
 
     .legendBar {
@@ -195,8 +195,12 @@
 
     .plan {
         align-self: flex-end;
-        height: 80%;
+        height: 100%;
         border-radius: 5px;
+    }
+
+    .legendLine {
+        width: 50%;
     }
 
     #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.line>div>div>svg,
@@ -210,7 +214,7 @@
     }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
 
     .main-dashboard {
         margin: 1.723% 1.75% 0% 1.57%
@@ -236,23 +240,17 @@
     }
 
     .article-dashboard-header {
-        margin-bottom: 10px;
         height: 53.572%;
     }
 
     .legendBar {
-        position: absolute;
-        left: 12%;
         font-size: 14px;
-        font-weight: 500;
     }
 
     .legendLine {
-        position: absolute;
-        bottom: 24%;
-        left: 12%;
-        width: 13%;
-        color: white;
+        top: 3%;
+        left: 10%;
+        width: 57%;
         font-size: 13px;
         z-index: 1;
     }
@@ -261,7 +259,7 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-        height: 210px;
+        height: 35%;
     }
 
     .article-dashboard {
@@ -298,7 +296,7 @@
     .plan {
         align-self: flex-end;
         height: 100%;
-        width: 33%;
+        width: 31%;
     }
 
     #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.line>div>div>svg,
