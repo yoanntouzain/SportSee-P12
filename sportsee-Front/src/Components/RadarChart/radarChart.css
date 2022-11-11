@@ -10,6 +10,15 @@
     overflow: inherit;
 }
 
+#root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div:nth-child(2)>div>div>svg>g.recharts-polar-grid>g.recharts-polar-grid-angle>line:nth-child(1),
+#root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div:nth-child(2)>div>div>svg>g.recharts-polar-grid>g.recharts-polar-grid-angle>line:nth-child(2),
+#root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div:nth-child(2)>div>div>svg>g.recharts-polar-grid>g.recharts-polar-grid-angle>line:nth-child(3),
+#root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div:nth-child(2)>div>div>svg>g.recharts-polar-grid>g.recharts-polar-grid-angle>line:nth-child(4),
+#root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div:nth-child(2)>div>div>svg>g.recharts-polar-grid>g.recharts-polar-grid-angle>line:nth-child(5),
+#root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div:nth-child(2)>div>div>svg>g.recharts-polar-grid>g.recharts-polar-grid-angle>line:nth-child(6) {
+    display: none;
+}
+
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
     .radar-chart {
         border-radius: 5px;
