@@ -8,8 +8,8 @@ import './RadialBarCharts.css'
 
 const style = {
   // width: '62px',
-  top: '58%',
-  right: 0,
+  top: 'auto',
+  left: 'auto',
   // transform: 'translate(-91%, -50%)',
   // lineHeight: '14px',
   // color: '#74798C',

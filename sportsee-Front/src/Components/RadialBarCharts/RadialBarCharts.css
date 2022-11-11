@@ -17,8 +17,8 @@ div.plan.radial>div>div>div>ul>li.recharts-legend-item.legend-item-1>svg>path {
     flex-direction: column;
     width: 50%;
     text-align: center;
-    margin-right: 62px;
-    transform: translate(-63%, -44%);
+    /* margin-right: 62px;
+    transform: translate(-63%, -44%); */
 }
 
 .valueScore {
@@ -81,7 +81,7 @@ div.plan.radial>div>div>div>ul>li.recharts-legend-item.legend-item-1>svg>path {
     font-size: 23px;
 }
 
-@media screen and (width: 1440px) {
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
 
     #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div:nth-child(2)>div>div>svg>g.recharts-layer.recharts-polar-angle-axis>g>g:nth-child(1)>text>tspan,
     #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div:nth-child(2)>div>div>svg>g.recharts-layer.recharts-polar-angle-axis>g>g:nth-child(2)>text>tspan,
@@ -92,10 +92,10 @@ div.plan.radial>div>div>div>ul>li.recharts-legend-item.legend-item-1>svg>path {
         font-size: 19px;
     }
 
-    .containerScore {
+    /* .containerScore {
         margin-right: 25px;
         transform: translate(-42%, -40%);
-    }
+    } */
 
     .valueScore {
         font-size: 26px;
@@ -114,42 +114,108 @@ div.plan.radial>div>div>div>ul>li.recharts-legend-item.legend-item-1>svg>path {
     }
 
     #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.radial>div>div>svg {
-        width: 232px;
-        height: 209px;
-        margin-top: 29px;
+        width: 100%;
+        height: 86%;
+        margin-top: 11%;
     }
 
     .legendRadial {
         font-size: 20px;
-        bottom: 26%;
-        left: 57%;
+        top: 8%;
+        left: 7%;
+    }
+
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1530px) {
+
+    #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.radial>div>div>div {
+        bottom: 22%;
+        right: 18%;
     }
 }
 
-@media screen and (width: 1024px) {
-    .containerScore {
+@media screen and (min-width: 1531px) and (max-width:1699px) {
+    #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.radial>div>div>div {
+        bottom: 22%;
+        right: 21%;
+    }
+}
+
+@media screen and (min-width: 1700px) and (max-width:1829px) {
+    #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.radial>div>div>div {
+        bottom: 22%;
+        right: 24%;
+    }
+}
+
+@media screen and (min-width: 1830px) and (max-width:2117px) {
+    #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.radial>div>div>div {
+        bottom: 24%;
+        right: 26%;
+    }
+}
+
+@media screen and (min-width: 2118px) and (max-width:2397px) {
+    #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.radial>div>div>div {
+        bottom: 28%;
+        right: 29%;
+    }
+}
+
+@media screen and (min-width: 2398px) and (max-width:2559px) {
+    #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.radial>div>div>div {
+        bottom: 28%;
+        right: 32%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    /* .containerScore {
         margin-right: 32px;
         transform: translate(-19%, -44%);
-    }
+    } */
 
     .valueScore {
-        font-size: 26px;
+        font-size: 22px;
         margin-bottom: 10px;
     }
 
     .nameScore {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.radial>div>div>svg {
-        width: 221px;
-        height: 176px;
-        margin-top: 26px;
+        width: 100%;
+        height: 86%;
+        margin-top: 9.77%;
     }
 
     .legendRadial {
         font-size: 14px;
-        bottom: 26%;
-        left: 57%;
+        top: 8%;
+        left: 7%;
+    }
+
+    #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.radial>div>div>div {
+        bottom: 22%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1193px) {
+    #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.radial>div>div>div {
+        right: 19%;
+    }
+}
+
+@media screen and (min-width: 1194px) and (max-width: 1361px) {
+    #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.radial>div>div>div {
+        right: 24%;
+    }
+}
+
+@media screen and (min-width: 1362px) and (max-width: 1439px) {
+    #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.radial>div>div>div {
+        right: 28%;
     }
 }
