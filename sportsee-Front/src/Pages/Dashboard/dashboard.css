@@ -1,12 +1,14 @@
 .main-dashboard {
     margin: 1.723% 6.25% 0% 7.57%;
     width: 100%;
-    height: 90%;
+    height: 96%;
+    display: flex;
+    flex-direction: column;
 }
 
 .section-dashboard {
     display: flex;
-    height: 90%;
+    height: 86%;
 }
 
 .header-dashboard {
@@ -106,7 +108,8 @@
     flex: 1.6539 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    height: 94%;
 }
 
 .aside-dashboard-container {
@@ -183,7 +186,7 @@
     }
 
     .article-dashboard-subtitle {
-        height: 33%;
+        height: 38%;
     }
 
     .legendBar {
