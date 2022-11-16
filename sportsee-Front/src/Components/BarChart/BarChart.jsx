@@ -8,6 +8,8 @@ import {
   ResponsiveContainer,
   Tooltip,
 } from 'recharts'
+import PropTypes from 'prop-types'
+
 import './barChart.css'
 
 /**
@@ -57,17 +59,6 @@ function Barchart(props) {
           itemStyle={{ color: 'white' }}
           content={<CustomTooltip />}
         />
-        {/* <Tooltip
-          width="10%"
-          offset={31}
-          stroke={0}
-          contentStyle={{
-            background: 'red',
-            border: 'none',
-          }}
-          labelStyle={{ display: 'none' }}
-          itemStyle={{ color: 'white' }}
-        /> */}
         <Bar
           yAxisId="yKilograms"
           name="Poids (kg)"
@@ -98,7 +89,6 @@ function Barchart(props) {
           axisLine={false}
           tick={{ stroke: '#9B9EAC' }}
           tickMargin={45}
-          // dataKey={props.calorie}
           dataKey="kilogram"
           domain={['dataMin-5', 'dataMax + 5']}
         />
@@ -117,4 +107,11 @@ function Barchart(props) {
     </ResponsiveContainer>
   )
 }
+
+Barchart.propTypes = {
+  days: PropTypes.string.isRequired,
+  kilograms: PropTypes.string.isRequired,
+  calorie: PropTypes.string.isRequired,
+}
+
 export default Barchart

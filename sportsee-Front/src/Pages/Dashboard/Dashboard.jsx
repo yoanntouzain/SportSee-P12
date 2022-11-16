@@ -133,7 +133,7 @@ function Dashboard() {
             </div>
             <div className="content-container">
               <div className="content-container-title">
-                {user.keyData.calorieCount}
+                {user.keyData.calorieCount}kCal
               </div>
               <div className="content-container-subtitle">Calories</div>
             </div>
@@ -145,7 +145,7 @@ function Dashboard() {
             </div>
             <div className="content-container">
               <div className="content-container-title">
-                {user.keyData.proteinCount}
+                {user.keyData.proteinCount}g
               </div>
               <div className="content-container-subtitle">Protéines</div>
             </div>
@@ -157,7 +157,7 @@ function Dashboard() {
             </div>
             <div className="content-container">
               <div className="content-container-title">
-                {user.keyData.carbohydrateCount}
+                {user.keyData.carbohydrateCount}g
               </div>
               <div className="content-container-subtitle">Glucides</div>
             </div>
@@ -169,7 +169,7 @@ function Dashboard() {
             </div>
             <div className="content-container">
               <div className="content-container-title">
-                {user.keyData.lipidCount}
+                {user.keyData.lipidCount}g
               </div>
               <div className="content-container-subtitle">Lipides</div>
             </div>

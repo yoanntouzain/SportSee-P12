@@ -7,6 +7,8 @@ import {
   ResponsiveContainer,
   YAxis,
 } from 'recharts'
+
+import PropTypes from 'prop-types'
 import './lineChart.css'
 
 /**
@@ -37,5 +39,10 @@ function Linechart(props) {
       </LineChart>
     </ResponsiveContainer>
   )
+}
+
+Linechart.propTypes = {
+  days: PropTypes.string.isRequired,
+  sessionLength: PropTypes.string.isRequired,
 }
 export default Linechart
