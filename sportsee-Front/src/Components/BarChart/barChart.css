@@ -8,6 +8,20 @@
     border-radius: 100%;
 }
 
+.custom-tooltip {
+    background: red;
+    border: 0px solid transparent;
+    padding: 12px 10px;
+    line-height: 39px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+
+.label {
+    margin: 0;
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
 
     #root>div>div.main-dashboard>section>article>div.article-dashboard-header>div>div>div.recharts-legend-wrapper>ul>li.recharts-legend-item.legend-item-0,
