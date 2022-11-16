@@ -62,9 +62,14 @@ div.plan.radial>div>div>div>ul>li.recharts-legend-item.legend-item-1>svg>path {
     font-size: 29px;
     font-weight: 500;
     color: black;
-    bottom: 28%;
+    top: 8%;
     z-index: 1;
-    left: 56%;
+    left: 7%;
+}
+
+#root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.radial>div>div>div {
+    bottom: 25%;
+    right: 25%;
 }
 
 #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div:nth-child(2)>div>div>svg>g.recharts-layer.recharts-polar-angle-axis>g>g:nth-child(4)>text {
@@ -124,7 +129,6 @@ div.plan.radial>div>div>div>ul>li.recharts-legend-item.legend-item-1>svg>path {
         top: 8%;
         left: 7%;
     }
-
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1530px) {

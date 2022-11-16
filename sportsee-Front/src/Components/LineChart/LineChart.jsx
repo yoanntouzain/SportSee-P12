@@ -6,7 +6,10 @@ import {
   Legend,
   ResponsiveContainer,
   YAxis,
+  Tooltip,
 } from 'recharts'
+
+import PropTypes from 'prop-types'
 import './lineChart.css'
 
 /**
@@ -32,10 +35,16 @@ function Linechart(props) {
           interval="0"
         />
         <YAxis hide={true} />
+        <Tooltip />
         <Legend />
         <Line type="monotone" dataKey={props.sessionLength} stroke="white" />
       </LineChart>
     </ResponsiveContainer>
   )
+}
+
+Linechart.propTypes = {
+  days: PropTypes.string.isRequired,
+  sessionLength: PropTypes.string.isRequired,
 }
 export default Linechart

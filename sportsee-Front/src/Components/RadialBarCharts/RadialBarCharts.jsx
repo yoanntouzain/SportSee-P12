@@ -4,15 +4,12 @@ import {
   Legend,
   ResponsiveContainer,
 } from 'recharts'
+import PropTypes from 'prop-types'
 import './RadialBarCharts.css'
 
 const style = {
-  // width: '62px',
   top: 'auto',
   left: 'auto',
-  // transform: 'translate(-91%, -50%)',
-  // lineHeight: '14px',
-  // color: '#74798C',
 }
 
 /**
@@ -36,7 +33,6 @@ function RadialBarCharts(props) {
         innerRadius="40%"
         outerRadius="140%"
         barSize={15}
-        // data={data}
         data={props.data}
         startAngle={90}
         endAngle={450}
@@ -44,7 +40,6 @@ function RadialBarCharts(props) {
       >
         <RadialBar
           minAngle={15}
-          // dataKey="uv"
           dataKey={props.value}
           label={{
             position: 'center',
@@ -54,7 +49,6 @@ function RadialBarCharts(props) {
           background={{ fill: 'white' }}
         ></RadialBar>
         <Legend
-          // fontSize={10}
           layout="vertical"
           verticalAlign="middle"
           wrapperStyle={style}
@@ -63,5 +57,9 @@ function RadialBarCharts(props) {
       </RadialBarChart>
     </ResponsiveContainer>
   )
+}
+
+RadialBarCharts.propTypes = {
+  value: PropTypes.string.isRequired,
 }
 export default RadialBarCharts

@@ -7,6 +7,7 @@ import {
   PolarAngleAxis,
   ResponsiveContainer,
 } from 'recharts'
+import PropTypes from 'prop-types'
 
 /**
  *
@@ -29,5 +30,10 @@ function Radarchart(props) {
       </RadarChart>
     </ResponsiveContainer>
   )
+}
+
+Radarchart.propTypes = {
+  category: PropTypes.string.isRequired,
+  values: PropTypes.string.isRequired,
 }
 export default Radarchart
