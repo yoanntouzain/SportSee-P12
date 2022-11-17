@@ -13,3 +13,19 @@
 #root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.line>div>div>svg {
     background: #FF0000;
 }
+
+.custom-tooltip-Line {
+    background: white;
+    padding: 12px;
+    text-align: center;
+}
+
+.label-Line {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#root>div>div.main-dashboard>section>article>div.article-dashboard-subtitle>div.plan.line>div>div>svg>g.recharts-layer.recharts-cartesian-axis.recharts-xAxis.xAxis {
+    opacity: 0.5;
+}

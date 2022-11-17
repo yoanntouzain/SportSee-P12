@@ -30,7 +30,6 @@ const CustomTooltip = ({ active, payload }) => {
       </div>
     )
   }
-
   return null
 }
 
@@ -51,7 +50,6 @@ function Barchart(props) {
         barGap="8"
       >
         <Tooltip
-          trigger="click"
           width="10%"
           offset={31}
           stroke={0}
@@ -75,7 +73,7 @@ function Barchart(props) {
           radius={[50, 50, 0, 0]}
           barSize={10}
         />
-        <CartesianGrid strokeDasharray="3 3" />
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
         <XAxis
           dataKey={props.days}
           tick={{ stroke: '#9B9EAC' }}

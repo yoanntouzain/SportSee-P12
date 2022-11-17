@@ -17,6 +17,18 @@ import './lineChart.css'
  * @param {Object} props user data
  * @returns HTML user's line chart about average duration sesion
  */
+
+const CustomTooltip = ({ active, payload }) => {
+  if (active && payload && payload.length) {
+    return (
+      <div className="custom-tooltip-Line">
+        <p className="label-Line">{`${payload[0].payload.sessionLength} min`}</p>
+      </div>
+    )
+  }
+  return null
+}
+
 function Linechart(props) {
   return (
     <ResponsiveContainer width="100%" height="100%">
@@ -29,13 +41,9 @@ function Linechart(props) {
           bottom: 5,
         }}
       >
-        <XAxis
-          dataKey={props.days}
-          style={{ fill: 'white', stroke: 'transparant' }}
-          interval="0"
-        />
+        <XAxis dataKey={props.days} style={{ fill: 'white' }} interval="0" />
         <YAxis hide={true} />
-        <Tooltip />
+        <Tooltip content={<CustomTooltip />} />
         <Legend />
         <Line type="monotone" dataKey={props.sessionLength} stroke="white" />
       </LineChart>
