@@ -26,7 +26,7 @@ function Radarchart(props) {
       >
         <PolarGrid />
         <PolarAngleAxis dataKey={props.category} />
-        <Radar dataKey={props.values} fill="red" fillOpacity={1} />
+        <Radar dataKey={props.values} fill="red" fillOpacity={0.7} />
       </RadarChart>
     </ResponsiveContainer>
   )
