@@ -67,6 +67,45 @@
     height: 400px;
 }
 
+/*  */
+.chartLegend {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 24px 20px;
+}
+
+.chartTitle {
+    justify-self: flex-start;
+    margin-right: auto;
+}
+
+.chartWeight__legend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pointBar {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+}
+
+.chartWeight__legend-weight {
+    margin-right: 32px;
+}
+
+.chartWeight__title {
+    font-size: 18px;
+}
+
+.chartWeight__legend-weight,
+.chartWeight__legend-calory,
+.chartWeight__title {
+    font-weight: 500;
+}
+
+/*  */
 .legendBar {
     position: absolute;
     top: 7%;
@@ -328,5 +367,9 @@
     .radar-chart,
     .radial-bar-chart {
         border-radius: 15px;
+    }
+
+    .chartLegend {
+        margin: 0px 24px;
     }
 }

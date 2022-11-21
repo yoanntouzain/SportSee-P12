@@ -77,7 +77,6 @@ function Barchart(props) {
         <XAxis
           dataKey={props.days}
           tick={{ stroke: '#9B9EAC' }}
-          axisLine={false}
           tickMargin={16}
         />
         <YAxis
@@ -100,7 +99,7 @@ function Barchart(props) {
           dataKey="calories"
           hide={true}
         />
-        <Legend verticalAlign="top" align="right" iconType="circle" />
+        {/* <Legend verticalAlign="top" align="right" iconType="circle" /> */}
       </BarChart>
     </ResponsiveContainer>
   )
