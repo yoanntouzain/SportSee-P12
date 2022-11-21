@@ -41,11 +41,22 @@ function Linechart(props) {
           bottom: 5,
         }}
       >
-        <XAxis dataKey={props.days} style={{ fill: 'white' }} interval="0" />
+        <XAxis
+          dataKey={props.days}
+          style={{ fill: 'white' }}
+          interval="0"
+          axisLine={false}
+          tickLine={false}
+        />
         <YAxis hide={true} />
         <Tooltip content={<CustomTooltip />} />
         <Legend />
-        <Line type="monotone" dataKey={props.sessionLength} stroke="white" />
+        <Line
+          type="monotone"
+          dataKey={props.sessionLength}
+          stroke="white"
+          dot={false}
+        />
       </LineChart>
     </ResponsiveContainer>
   )

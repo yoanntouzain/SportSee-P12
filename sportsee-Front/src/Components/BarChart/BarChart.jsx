@@ -77,7 +77,6 @@ function Barchart(props) {
         <XAxis
           dataKey={props.days}
           tick={{ stroke: '#9B9EAC' }}
-          axisLine={false}
           tickMargin={16}
         />
         <YAxis
