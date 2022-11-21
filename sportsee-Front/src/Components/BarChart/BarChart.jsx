@@ -99,7 +99,7 @@ function Barchart(props) {
           dataKey="calories"
           hide={true}
         />
-        <Legend verticalAlign="top" align="right" iconType="circle" />
+        {/* <Legend verticalAlign="top" align="right" iconType="circle" /> */}
       </BarChart>
     </ResponsiveContainer>
   )

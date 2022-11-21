@@ -95,7 +95,35 @@ function Dashboard() {
         <article className="article-dashboard">
           {/* Article header */}
           <div className="article-dashboard-header">
-            <span className="legendBar">Activité quotidienne</span>
+            {/* <span className="legendBar">Activité quotidienne</span> */}
+            {/*  */}
+            <div className="chartLegend">
+              <div className="chartTitle">
+                <span className="chartWeight__title">Activité quotidienne</span>
+              </div>
+
+              <div className="chartWeight__legend">
+                <div className="chartLegendBar">
+                  <svg className="pointBar">
+                    <circle cx="50%" cy="50%" fill="#282D30" r="4"></circle>
+                  </svg>
+                </div>
+                <div className="chartLegendBar">
+                  <span className="chartWeight__legend-weight">Poids (kg)</span>
+                </div>
+                <div className="chartLegendBar">
+                  <svg className="pointBar">
+                    <circle cx="50%" cy="50%" fill="#FF0000" r="4"></circle>
+                  </svg>
+                </div>
+                <div className="chartLegendBar">
+                  <span className="chartWeight__legend-calory">
+                    Calories brûlées (kCal)
+                  </span>
+                </div>
+              </div>
+            </div>
+            {/*  */}
             <BarChart
               data={activity}
               days="day"
