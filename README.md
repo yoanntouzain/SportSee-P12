@@ -6,8 +6,7 @@
 
 - Faite la commande cd ./SportSee-Back
 - Pour npm utiliser la commande npm install
-- Une fois l'installation fini lancer la commande npm run dev
-- si la commande npm run dev ne fonctionne pas utiliser la commande npm run start
+- Utiliser la commande npm run start
 
 #### Partie Front
 
