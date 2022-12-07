@@ -19,3 +19,6 @@
 
 - une fois la page chargée, vous aller avoir une page d'erreur avec cette url : http://localhost:3001/error
 - Changer par http://localhost:3001/user/12 ou http://localhost:3001/user/18 pour passer d'un utilisateur à l'autre
+
+####### Surface
+Le projet se concentrant uniquement sur desktop, la résolution minimal étant de 1024 par 780 pixels
